@@ -7,6 +7,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://kit.fontawesome.com/23278bf123.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -19,15 +20,15 @@
             <li><a href="#" class="nav__link no-cursor">Contact</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
-        </div comment="nav__container END">
-        <button class="btn__menu">
+<!-- Menu Button  -->
+          <button class="btn__menu btn-position" onclick="openMenu()">
             <i class="fa-solid fa-bars"></i>
         </button>
         <div class="menu__backdrop">
-            <button class="btn__menu btn__menu--close">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <i class="fas fa-times"></i>
             </button>
-            <ul>
+            <ul class="menu__links">
                 <li class="menu__list">
                     <a href="#" class="menu__link">Home</a>
                 </li>
@@ -39,6 +40,7 @@
                 </li>
             </ul>
         </div>
+        </div comment="nav__container END">
       </nav>
       <!-- NAVIGATIN BAR END -->
       <!-- HEADER START  -->
